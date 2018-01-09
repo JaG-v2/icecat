@@ -101,6 +101,28 @@ class Result implements ResultInterface
     }
 
     /**
+     * Gets the short summary description.
+     *
+     * @return string
+     */
+    public function ShortSummaryDescription()
+    {
+        return $this->getProductData()->SummaryDescription->ShortSummaryDescription;
+    }
+
+
+    /**
+     * Gets the long summary description.
+     *
+     * @return string
+     */
+    public function LongSummaryDescription()
+    {
+        return $this->getProductData()->SummaryDescription->LongSummaryDescription;
+    }
+
+
+    /**
      * Gets the product category.
      *
      * @return string
