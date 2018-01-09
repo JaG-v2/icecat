@@ -27,7 +27,7 @@ class InvalidDataSheetException extends \Exception
      */
     private function buildErrorMessage($message, $serverError, $serverCode)
     {
-        return $message . ' Code: ' . $serverCode . ' Message:' . $serverError;
+        return $serverCode;
     }
 
 }
