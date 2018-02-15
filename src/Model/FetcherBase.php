@@ -85,12 +85,14 @@ abstract class FetcherBase implements FetcherInterface
      * @param $ean
      * @param $language
      */
-    public function __construct($username, $password, $ean, $language)
+    public function __construct($username, $password, $ean, $language, $sku ='', $brand ='')
     {
         $this->username = $username;
         $this->password = $password;
         $this->ean = $ean;
         $this->language = $language;
+        $this->sku = $sku;
+        $this->brand = $brand;
     }
 
     /**
